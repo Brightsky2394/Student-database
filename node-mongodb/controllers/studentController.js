@@ -78,21 +78,6 @@ router.get('/:id', (req, res) => {
 })
 
 
-// router.get('/delete/:id', (req, res) => {
-//     Student.findByIdAndDelete(req.params.id)
-//             .then(doc => {
-//                 if (doc) {
-//                     res.redirect("student/list");
-//                 } else {
-//                     console.log("Record not found for deletion");
-//                     res.status(404).send("Record not found for deletion");
-//                 }
-//             })
-//             .catch(err => {
-//                 console.log("Error in deletion: ", err);
-//                 res.status(500).send("Error in deletion");
-//             })
-// })
 
 router.get('/delete/:id', async (req, res) => {
     try {
